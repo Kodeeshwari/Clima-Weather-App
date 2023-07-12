@@ -17,6 +17,6 @@
 
 ### Screenshots of Light and Dark modes:
 
-![Light mode](screenshots/light-mode.png?raw=true "Light Mode")
-![Dark mode](screenshots/dark-mode.png?raw=true "Dark mode")
-![light and dark mode](screenshots/ClimaWeatherApp.mp4?raw=true)
+<img src="/screenshorts/light-mode.png" alt="Light Mode" width="400"/>
+<img src="/screenshorts/dark-mode.png" alt="Dark Mode" width="400"/>
+<img src="/screenshorts/ClimaWeatherApp.mp4" alt="Working Application" width="400"/>
