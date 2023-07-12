@@ -13,10 +13,10 @@
 - Learn to use URLSession to network and make HTTP requests.
 - Parse JSON with the native Encodable and Decodable protocols.
 - Learn to use Grand Central Dispatch to fetch the main thread.
-- Learn to use Core Location to get the current location from the phone GPS.
+- Learn to use Core Location to get the current location from the phone's GPS.
 
-### Screenshots of Light and Dark mode:
+### Screenshots of Light and Dark modes:
 
-![Light mode](/screenshots/light-mode.png?raw=true "Light Mode")
-![Dark mode](/screenshots/dark-mode.png?raw=true "Dark mode")
-![light and dark mode](/screenshots/ClimaWeatherApp.mp4?raw=true)
+![Light mode](screenshots/light-mode.png?raw=true "Light Mode")
+![Dark mode](screenshots/dark-mode.png?raw=true "Dark mode")
+![light and dark mode](screenshots/ClimaWeatherApp.mp4?raw=true)
