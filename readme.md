@@ -17,6 +17,6 @@
 
 ### Screenshots of Light and Dark modes:
 
-<img src="/screenshorts/light-mode.png" alt="Light Mode" width="400"/>
-<img src="/screenshorts/dark-mode.png" alt="Dark Mode" width="400"/>
-<img src="/screenshorts/ClimaWeatherApp.gif" alt="Working Application" width="400"/>
+<img src="/screenshorts/light-mode.png" alt="Light Mode" width="250"/>
+<img src="/screenshorts/dark-mode.png" alt="Dark Mode" width="250"/>
+<img src="/screenshorts/ClimaWeatherApp.gif" alt="Working Application" width="250"/>
