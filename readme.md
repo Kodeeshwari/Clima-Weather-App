@@ -19,4 +19,4 @@
 
 <img src="/screenshorts/light-mode.png" alt="Light Mode" width="400"/>
 <img src="/screenshorts/dark-mode.png" alt="Dark Mode" width="400"/>
-<img src="/screenshorts/ClimaWeatherApp.mp4" alt="Working Application" width="400"/>
+<img src="/screenshorts/ClimaWeatherApp.gif" alt="Working Application" width="400"/>
