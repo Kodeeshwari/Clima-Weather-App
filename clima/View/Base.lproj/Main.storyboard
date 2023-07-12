@@ -35,7 +35,7 @@
                                 <color key="tintColor" name="weatherColor"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Montreal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-1f-hgi">
-                                <rect key="frame" x="263" y="397" width="114" height="36"/>
+                                <rect key="frame" x="16" y="397" width="361" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" name="weatherColor"/>
@@ -49,6 +49,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="location.circle" catalog="system"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnLiveLocationPresses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAb-5G-MA1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNe-89-kPp">
                                 <rect key="frame" x="340" y="72" width="37" height="35"/>

@@ -9,6 +9,7 @@ import Foundation
 
 protocol WeatherManagerDelegate{
     func didUpdateWeather(weather : WeatherModel)
+//    func didFailError(error : String)
 }
 
 struct WeatherManager{
@@ -21,11 +22,18 @@ struct WeatherManager{
         performRequest(urlString:urlString)
     }
     
+    func fetchWeatherByCordinates(lat:Double, lon:Double){
+        let urlString = "\(weatherUrl)&lat=\(lat)&lon=\(lon)"
+        performRequest(urlString:urlString)
+    }
+    
     func performRequest(urlString:String){
-//        URL(string: "https://www.zenibyte.com/")!
+        
         let url = URL(string: urlString)
-        let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url!, completionHandler: {(data:Data?, response:URLResponse?, error: Error?) in
+//        let session = URLSession(configuration: .default)
+//        let task = URLSession(configuration: .default).dataTask(with: <#T##URLRequest#>)
+        
+        let task = URLSession(configuration: .default).dataTask(with: url!, completionHandler: {(data:Data?, response:URLResponse?, error: Error?) in
             if let safeData = data{
                 parseJson(weatherData: safeData)
             }
@@ -39,6 +47,7 @@ struct WeatherManager{
     
     func parseJson(weatherData: Data) {
         let decoder = JSONDecoder()
+        
         do {
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
             let city = decodedData.name
@@ -51,7 +60,9 @@ struct WeatherManager{
             delegate?.didUpdateWeather(weather: weather)
             
         } catch {
-            print("Error while parsing JSON: \(error)")
+//            let error = "\(error.localizedDescription)"
+//            delegate?.didFailError(error: error)
+            print("Error while parsing JSON: \(error.localizedDescription)")
         }
     }
 }
